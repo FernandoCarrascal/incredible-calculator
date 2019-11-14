@@ -6,7 +6,7 @@ public class Ppal {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int boton=0, suma=0, cero=0, numero=0;
+		int boton=0, suma=0, resta=0, cero=0, numero=0;
 		
 		System.out.println("Bienvenido, con este programa podras usar la calculadora.");
 		System.out.println("Para sumar pulse 1.");
@@ -24,9 +24,17 @@ public class Ppal {
 				numero=Leer.datoInt();
 				suma=suma+numero;
 			} while (numero!=cero);
+			System.out.printf("La suma de los números es %d",suma);
 			break;
 		case 2:
+			System.out.println("Introduzca los números que quiere sumar separados por intro.");
+			System.out.println("Para parar de introducir números y obtener el resultado introduzca 0");
 			
+			do {
+				numero=Leer.datoInt();
+				resta=resta+numero;
+			} while (numero!=cero);
+			System.out.printf("La suma de los números es %d",resta);
 			break;
 		case 3:
 			
